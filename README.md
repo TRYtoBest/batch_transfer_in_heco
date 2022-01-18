@@ -1,5 +1,7 @@
+**使用本脚本导致转账错误的资金损失概不负责**
+<br/>
 #用于eth/heco/bsc等链的批量转账,一转多。每个地址用空格区分 或者直接从记事本复制(一行一收币地址)。<br/>
-**本脚本仅用于heco测试网，如需要在其他主网上转账，请修改usdt合约地址及RPC接口(https://http-testnet.hecochain.com)。**<br/>
+**本脚本仅用于heco测试网，如需要在其他主网上转账，请修改usdt合约地址及RPC接口https://http-testnet.hecochain.com   **<br/>
 
 第8行
 ```
@@ -20,7 +22,7 @@ put_html('<a target="view_window" href=\"https://testnet.hecoinfo.com/tx/'+Web3.
 
 
 <br/>
-**使用本脚本导致转账错误的资金损失概不负责**<br/>
+
 
 python版本：3.7<br/>
 需要 web3、eth_account、pywebio模块<br/>
@@ -43,7 +45,7 @@ python3 transfer_token.py
 在弹窗中输入相应信息<br/>
 按照提示进行操作
 ![transfer_token1.png](https://s2.loli.net/2022/01/18/EAxN6zCeRowS57p.png)
-转账多个地址如下图所示
+多个地址如下图所示排列
 ![transfer_token1_1.png](https://s2.loli.net/2022/01/18/nCv48yFB2gLehzi.png)
 ![transfer_token2.png](https://s2.loli.net/2022/01/18/DpYSBEV3hFHnIkl.png)
 转账效果
