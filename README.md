@@ -22,7 +22,7 @@ python3 transfer_token.py
 ```
 
 在弹窗中输入相应信息<br/>
-![transfer_token1](https://github.com/TRYtoBest/batch_transfer_in_heco/blob/main/transfer_token1.png)
-![transfer_token2](https://github.com/TRYtoBest/batch_transfer_in_heco/blob/main/transfer_token2.png)
-![transfer_token3](https://github.com/TRYtoBest/batch_transfer_in_heco/blob/main/transfer_token3.png)
-![transfer_token4](https://github.com/TRYtoBest/batch_transfer_in_heco/blob/main/transfer_token4.png)
+![transfer_token1](https://hub.fastgit.org/TRYtoBest/batch_transfer_in_heco/blob/main/transfer_token1.png)
+![transfer_token2](https://hub.fastgit.org/TRYtoBest/batch_transfer_in_heco/blob/main/transfer_token2.png)
+![transfer_token3](https://hub.fastgit.org/TRYtoBest/batch_transfer_in_heco/blob/main/transfer_token3.png)
+![transfer_token4](https://hub.fastgit.org/TRYtoBest/batch_transfer_in_heco/blob/main/transfer_token4.png)
