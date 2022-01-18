@@ -25,6 +25,7 @@ put_html('<a target="view_window" href=\"https://testnet.hecoinfo.com/tx/'+Web3.
 <br/>
 
 **使用方法（heco测试网）**
+<br/>
 python版本：3.7<br/>
 需要 web3、eth_account、pywebio模块<br/>
 
