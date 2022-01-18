@@ -6,7 +6,7 @@ import os
 import time
 import usdt_abi
 w3 = Web3(HTTPProvider("https://http-testnet.hecochain.com"))#heco测试网
-usdt_contract = Web3.toChecksumAddress('0x04F535663110A392A6504839BEeD34E019FdB4E0')
+usdt_contract = Web3.toChecksumAddress('0x04F535663110A392A6504839BEeD34E019FdB4E0')#usdt合约地址heco测试网
 erc20token_contract =None
 usdtcontract = w3.eth.contract(address=usdt_contract,abi=usdt_abi.usdtabi)
 put_text('请在本文件当前目录下创建“private_key”文件，并填入私钥')
@@ -22,8 +22,11 @@ acc = Account.from_key(private_key=private_key)
 fromAddress = Web3.toChecksumAddress(acc.address)
 put_text('fromAddress:'+fromAddress)
 #usdtcontract.functions.decimals().call()
-put_text('主网币(HT)余额:'+str(Web3.fromWei(w3.eth.getBalance(acc.address),'ether')))
-put_text('usdt余额：'+str(usdtcontract.functions.balanceOf(fromAddress).call()/1000000))
+try:
+  put_text('主网币(HT)余额:'+str(Web3.fromWei(w3.eth.getBalance(acc.address),'ether')))
+  put_text('usdt余额：'+str(usdtcontract.functions.balanceOf(fromAddress).call()/1000000))
+except Exception as e:
+  put_text('查询到余额'+str(e))
 
 toAddress=input("转账目的地址：（如：0x4Af3Bb0C963a391854F0E09e05D571ee3CC44396）"
                 "*多个地址用单个空格分开"
